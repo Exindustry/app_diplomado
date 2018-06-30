@@ -1,0 +1,56 @@
+<ion-menu [content]="content">
+    
+    <ion-header>
+    
+      <ion-toolbar color=colormenu>
+      <ion-title> Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+       
+    
+      <ion-content>
+        <ion-list>
+            
+           <ion-item> 
+          <ion-icon name="alert" item-left></ion-icon>
+          <button color=primary ion-item clear (click)="iraopcion(perfil.ENTRADA)" >
+         <b>Opcion 1</b> 
+         </button>
+        </ion-item> 
+
+        <ion-item> 
+            <ion-icon name="logo-twitter" item-left></ion-icon>
+            <button color=otro ion-item clear (click)="iraopcion(perfil.ENTRADA)" >
+           <b>Opcion 2</b> 
+           </button>
+          </ion-item> 
+        
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <ion-header>
+        
+        <ion-navbar>
+          <button ion-button menuToggle icon-only>
+        
+            <ion-icon name='menu'></ion-icon>
+          
+          </button>
+         <ion-title>
+           prestamos audiovisuales
+         </ion-title>
+        
+        </ion-navbar>
+        
+        </ion-header>
+
+        <ion-content #content></ion-content>  
+
+<ion-content padding>
+  
+    <ion-item-divider color="light" text-wrap>
+      <b>BIENVENIDO: {{nombre_usuario}}</b>
+    </ion-item-divider>
+
+</ion-content>
